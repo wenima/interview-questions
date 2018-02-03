@@ -15,3 +15,9 @@ def test_find_missing(source, target, result):
     """Test that function find_missing returns the missing element between 2 lists."""
     from missing_element import find_missing
     assert find_missing(source, target) == result
+
+@pytest.mark.parametrize('source, target, result', TEST)
+def test_find_missing(source, target, result):
+    """Test that function find_missing returns the missing element between 2 lists."""
+    from missing_element import find_missing_counter
+    assert find_missing_counter(source, target) == result
