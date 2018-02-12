@@ -11,12 +11,12 @@ TESTS = [
     (["a","b"], ["a","b"]),
     (["a"], ["a"]),
     ([0,0], [0,0]),
-    ([0]), [0]),
-    []), []),
+    ([0], [0]),
+    ([], []),
 ]
 
-@pytest.mark.parametrize('source, result', TEST)
-def move_zeros(source, result):
+@pytest.mark.parametrize('source, result', TESTS)
+def test_move_zeros(source, result):
     """Test that function move_zeros returns a list matching result."""
     from move_zeros import move_zeros
     assert move_zeros(source) == result
