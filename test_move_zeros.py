@@ -1,4 +1,4 @@
-"""Tests for for https://www.codewars.com/kata/kata/moving-zeros-to-the-end/"""
+"""Tests for for https://www.codewars.com/kata/moving-zeros-to-the-end/"""
 
 import pytest
 
