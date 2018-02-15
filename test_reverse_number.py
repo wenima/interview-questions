@@ -16,3 +16,15 @@ def test_reverse_number(source, result):
     """Test that function reverse_number returns the correct result."""
     from reverse_number import reverse_number
     assert reverse_number(source) == result
+
+@pytest.mark.parametrize('source, result', TESTS)
+def test_reverse_number_short(source, result):
+    """Test that function reverse_number returns the correct result."""
+    from reverse_number import reverse_number_short
+    assert reverse_number_short(source) == result
+
+@pytest.mark.parametrize('source, result', TESTS)
+def test_reverse_mod(source, result):
+    """Test that function reverse_number returns the correct result."""
+    from reverse_number import reverse_number_mod
+    assert reverse_number_mod(source) == result
