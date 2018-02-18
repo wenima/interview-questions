@@ -1,4 +1,4 @@
-"""Tests for for https://www.codewars.com/kata/moving-zeros-to-the-end/"""
+"""Tests for for https://www.codewars.com/kata/number-of-measurements-to-spot-the-counterfeit-coin/"""
 
 TESTS = [
     (1, 0),
