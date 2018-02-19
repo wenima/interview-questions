@@ -1,5 +1,7 @@
 """Tests for for https://www.codewars.com/kata/number-of-measurements-to-spot-the-counterfeit-coin/"""
 
+import pytest
+
 TESTS = [
     (1, 0),
     (2, 1),
@@ -9,7 +11,7 @@ TESTS = [
 ]
 
 @pytest.mark.parametrize('coins, result', TESTS)
-def test_how_many_measurements(coins, tries):
+def test_how_many_measurements(coins, result):
     """Test that function how_many_measurements returns a defined result."""
     from counterfeit import how_many_measurements
     assert how_many_measurements(coins) == result
