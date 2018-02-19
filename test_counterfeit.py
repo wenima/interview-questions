@@ -16,3 +16,9 @@ def test_how_many_measurements(coins, result):
     """Test that function how_many_measurements returns a defined result."""
     from counterfeit import how_many_measurements
     assert how_many_measurements(coins) == result
+
+@pytest.mark.parametrize('coins, result', TESTS)
+def test_how_many_measurements(coins, result):
+    """Test that function how_many_measurements returns a defined result."""
+    from counterfeit import how_many_measurements_short
+    assert how_many_measurements_short(coins) == result

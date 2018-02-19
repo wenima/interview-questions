@@ -1,6 +1,6 @@
 """Tests for for https://www.codewars.com/kata/number-of-measurements-to-spot-the-counterfeit-coin/"""
 
-from math import ceil
+from math import ceil, log
 
 def how_many_measurements(n):
     """Return the number of measurements it would take to find the counterfeit coin within n coins."""
@@ -12,3 +12,7 @@ def how_many_measurements(n):
         i += 1
         n = ceil(n / 3)
     return i + 2
+
+def how_many_measurements_short(n):
+    """Return the number of measurements it would take to find the counterfeit coin within n coins."""
+    return ceil(log(n, 3))
